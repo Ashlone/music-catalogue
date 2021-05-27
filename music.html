@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Music Catalogue</title>
+
+    <link href="music.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Music List</h1>
+
+    <div class="form">
+      <form id="form">
+        <label>Enter Song</label><br />
+        <input type="text" id="song" /><br />
+        <label>Enter Artist Name</label><br />
+        <input type="text" id="artist" /><br />
+        <label>Enter Album</label><br />
+        <input type="text" id="album" /><br />
+        <label>Enter release date</label><br />
+        <input type="text" id="release_date" /><br />
+        <label>Choose genre</label><br />
+        <select id="genre">
+          <option>---choose your genre---</option>
+          <option>hihop</option>
+          <option>rnb</option>
+          <option>gospel</option>
+          <option>old school jam</option></select
+        ><br />
+
+        <button>Add Music</button>
+      </form>
+      <div>
+        <thead>
+          <table>
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+              <th>Album</th>
+              <th>Genre</th>
+              <th>Release Date</th>
+              <th></th>
+            </tr>
+          </table>
+        </thead>
+        <tbody id="music-list"></tbody>
+      </div>
+    </div>
+
+    <script src="music.js" type="text/javascript"></script>
+  </body>
+</html>
